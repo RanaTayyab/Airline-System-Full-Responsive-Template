@@ -1,0 +1,178 @@
+<!DOCTYPE html>
+<html class="no-js" lang="en">
+
+<head>
+  <meta http-equiv="x-ua-compatible" content="ie=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <link rel="stylesheet" href="css/font-awesome.min.css">
+  <link rel="stylesheet" href="css/bootstrap.css">
+  <link rel="stylesheet" href="css/signup.css">
+
+  <title>Airline Booking System</title>
+</head>
+
+<body id="home">
+  <nav class="navbar navbar-expand-md bg-dark navbar-dark fixed-top">
+    <div class="container">
+     <a href="index1.html" class="navbar-brand"> <img src="img/logo1.png" height="40" width="40"> &nbsp;&nbsp;<strong><i>Aero Travels</i></strong></a>
+      <button class="navbar-toggler" data-toggle="collapse" data-target="#navbarCollapse">
+                   <span class="navbar-toggler-icon"></span>
+               </button>
+      <div class="collapse navbar-collapse" id="navbarCollapse">
+        <ul class="navbar-nav ml-auto">
+          <li class="nav-item">
+            <a href="index1.html" class="nav-link">Home</a>
+          </li>
+          <li class="nav-item">
+            <a href="#explore-head-section" class="nav-link">Explore</a>
+          </li>
+          <li class="nav-item">
+            <a href="#create-head-section" class="nav-link">Special Offers</a>
+          </li>
+          <li class="nav-item">
+            <a href="#share-head-section" class="nav-link">Vacations</a>
+          </li>
+        </ul>
+			&nbsp; <a href="signup.html" class="btn btn-info " role="button">Sign up</a>
+			  &nbsp; <a href="login.html" class="btn btn-info " role="button">Login</a>
+      </div>
+    </div>
+  </nav>
+
+  <!-- HOME SECTION -->
+  <header id="home-section">
+    <div class="dark-overlay">
+      <div class="home-inner">
+        <div class="container">
+    <div class="row">
+           <div class="col-sm-10 col-md-10 ml-5 pl-5" >
+              <h1 class="display-4 text-center">Sign Up</h1>
+            <div class="account-wall">
+                <img class="profile-img" src="img/airplane5.jpg"
+                    alt="">
+                <form class="form-signin" action="login.html">
+                 <input type="text" class="form-control" placeholder="Full Name" required autofocus> 
+                <input type="text" class="form-control" placeholder="Email" required >
+                <input type="password" class="form-control" placeholder="Password" required>
+
+				   <input type="password" class="form-control" placeholder="Confirm Password" required>
+				   <br>
+                <button class="btn btn-lg btn-primary btn-block mb-2" type="submit">
+                    Sign up</button>
+					<label class="checkbox pull-left">
+                    <input type="checkbox" value="remember-me">
+                    <span style="color:#008ed6">Agree on Privacy Terms</span>
+                </label>
+                <a href="#" class="pull-right need-help">Need help? </a><span class="clearfix"></span>
+                </form>
+            </div>
+
+        </div>
+    </div>
+
+         
+        </div>
+      </div>
+    </div>
+  </header>
+
+	 <!-- Login MODAL -->
+    <div class="modal fade text-dark" id="loginModal">
+      <div class="modal-dialog">
+        <div class="modal-content">
+          <div class="modal-header">
+            <h5 class="modal-title" id="loginModalTitle">
+              Login
+            </h5>
+          </div>
+          <div class="modal-body">
+            <form>
+               <div class="form-group">
+				<label for="email"> Your Email</label>
+      
+              <div class="input-group">
+			<span class="input-group-addon"><i class="fa fa-envelope fa" aria-hidden="true"></i></span>
+               
+                <input type="email" class="form-control"  placeholder="Enter your Email">
+              </div>
+			  </div>
+              <div class="form-group">
+				<label for="password">Password</label>
+				 <div class="input-group">
+				 <span class="input-group-addon"><i class="fa fa-lock fa-lg" aria-hidden="true"></i></span>
+
+                <input type="password" class="form-control" placeholder="Enter your Password">
+              </div>
+			  </div>
+            </form>
+          </div>
+			<div class="modal-footer">
+       <a href="index.html" class="btn btn-primary btn-block" role="button">Login</a>
+          </div>
+        </div>
+      </div>
+    </div>
+	
+	 <!-- Registration MODAL -->
+    <div class="modal fade text-dark" id="registrationModal">
+      <div class="modal-dialog">
+        <div class="modal-content">
+          <div class="modal-header">
+            <h5 class="modal-title" id="registrationModalTitle">
+              Sign Up
+            </h5>
+          </div>
+          <div class="modal-body">
+            <form>
+			
+			<div class="form-group">
+				<label for="name"> Your Name</label>
+      
+              <div class="input-group">
+			<span class="input-group-addon"><i class="fa fa-user fa" aria-hidden="true"></i></span>
+          
+                <input type="email" class="form-control"  placeholder="Enter your Name">
+              </div>
+			  </div>
+			
+			
+		 <div class="form-group">
+				<label for="email"> Your Email</label>
+      
+              <div class="input-group">
+			<span class="input-group-addon"><i class="fa fa-envelope fa" aria-hidden="true"></i></span>
+               
+                <input type="email" class="form-control"  placeholder="Enter your Email">
+              </div>
+			  </div>
+              <div class="form-group">
+				<label for="password">Password</label>
+				 <div class="input-group">
+				 <span class="input-group-addon"><i class="fa fa-lock fa-lg" aria-hidden="true"></i></span>
+
+                <input type="password" class="form-control" placeholder="Enter your Password">
+              </div>
+			  </div>
+			   <div class="form-group">
+				<label for="password">Confirm Password</label>
+				 <div class="input-group">
+				 <span class="input-group-addon"><i class="fa fa-lock fa-lg" aria-hidden="true"></i></span>
+
+                <input type="password" class="form-control" placeholder="Confirm your Password">
+              </div>
+            </form>
+          </div>
+			<div class="modal-footer">
+       <a href="index.html" class="btn btn-primary btn-block" role="button">Register</a>
+          </div>
+        </div>
+      </div>
+    </div>
+	
+
+  <script src="js/jquery.min.js"></script>
+  <script src="js/popper.min.js"></script>
+  <script src="js/bootstrap.min.js"></script>
+</body>
+
+</html>
